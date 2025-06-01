@@ -1,0 +1,52 @@
+You need to create 7 regressors and 7 classifiers (one per evaluation target) to be trained on the data provided. Hint: use the Python libraries.
+
+FOR THE REGRESSORS
+
+- Step 1:
+
+Create 7 different datasets with ALL the features and one single target. Make the same thing for all the remaining targets.
+
+As an example, the dataset related to the first evaluation target will have these columns:
+
+timeDuration, nMovements, movementsDifficulty, robotSpeech, acrobaticMovements, movementsRepetition, musicGenre, movementsTransitionsDuration, humanMovements, balance, speed, bodyPartsCombination, musicBPM, sameStartEndPositionPlace, headMovement, armsMovement, handsMovement, legsMovement, feetMovement, EvaluationChoreographyStoryTelling
+
+the second will have the the second evaluation target in the last column EvaluationChoreographyRhythm instead of the first one and so on.
+
+- Step 2: 
+
+Train 7 regressors (one per evaluation target) by using the dataset and by using a state-of-the-art methodology to split it in train, test, and validation sets. Create plots and tables by measuring the metrics.
+
+- Step 3:
+Use the Python library Shap to individuate the features that most influence each prediction.
+
+
+--------------------
+
+FOR THE CLASSIFIERS
+
+- Step 1:
+
+Create 7 different datasets with ALL the features and one single target. Make the same thing for all the remaining targets.
+
+ATTENTION HERE: the classifier needs categorical targets --> you need to modify the dataset by transforming all the values between 1 and 3 in value 0, and all the values between 4 and 5 in value 1 in order to have a categorical dataset.
+
+Then, with this new dataset, you can proceed as for the regressor tasks.
+
+- Step 2: 
+
+Train 7 classifiers (one per evaluation target) by using the dataset and by using a state-of-the-art methodology to split it in train, test, and validation sets (SAME OF THE REGRESSORS). Create plots and tables by measuring the metrics.
+
+- Step 3:
+Use the Python library Shap to individuate the features that most influence each prediction.
+
+------------------------
+
+How to split the work:
+1) one person works on the regressors
+2) one person works on the classifiers
+3) one person works on the Shap library for both the regressors and the classifiers
+
+Please, consider to be aware of the work af all your colleagues to be able to work in parallel and then discuss together the results.
+
+
+
