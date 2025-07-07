@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/regression/Tuned Models/XGBoost/xgb_model_storytelling.json",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Storytelling/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/data/regression/Data Splits/Storytelling/X_test_storytelling.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Storytelling/feature_names_Storytelling.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Storytelling/raw_Storytelling.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Storytelling/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Storytelling/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

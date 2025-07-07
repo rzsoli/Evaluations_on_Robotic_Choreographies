@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/classification/saved_overall_best_models/OVERALL_BEST_XGBoost_GridCV_MovementTechnique.joblib",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/MovementTechnique/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/classification/classification_models_data/EvaluationChoreographyMovementTechnique/X_holdout.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/MovementTechnique/feature_names_MovementTechnique.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/MovementTechnique/raw_MovementTechnique.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/MovementTechnique/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/MovementTechnique/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/classification/saved_overall_best_models/OVERALL_BEST_CatBoost_GridCV_SpaceUse.joblib",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/SpaceUse/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/classification/classification_models_data/EvaluationChoreographySpaceUse/X_holdout.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/SpaceUse/feature_names_SpaceUse.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/SpaceUse/raw_SpaceUse.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/SpaceUse/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/SpaceUse/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

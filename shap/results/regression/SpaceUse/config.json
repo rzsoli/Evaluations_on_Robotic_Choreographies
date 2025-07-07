@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/regression/Tuned Models/XGBoost/xgb_model_spaceuse.json",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/SpaceUse/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/data/regression/Data Splits/SpaceUse/X_test_spaceuse.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/SpaceUse/feature_names_SpaceUse.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/SpaceUse/raw_SpaceUse.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/SpaceUse/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/SpaceUse/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

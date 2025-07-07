@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/regression/Tuned Models/CatBoost/catboost_rhythm.cbm",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Rhythm/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/data/regression/Data Splits/Rhythm/X_test_rhythm.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Rhythm/feature_names_Rhythm.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Rhythm/raw_Rhythm.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Rhythm/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/Rhythm/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

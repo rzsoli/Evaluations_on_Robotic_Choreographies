@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/regression/Tuned Models/XGBoost/xgb_model_movementtechnique.json",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/MovementTechnique/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/data/regression/Data Splits/MovementTechnique/X_test_movementtechnique.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/MovementTechnique/feature_names_MovementTechnique.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/MovementTechnique/raw_MovementTechnique.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/MovementTechnique/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/MovementTechnique/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

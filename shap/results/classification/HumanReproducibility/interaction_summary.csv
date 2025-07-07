@@ -1,0 +1,11 @@
+feature1,feature2,mean_interaction
+nMovements,musicBPM,0.0
+nMovements,movementsTransitionsDuration,0.0
+nMovements,timeDuration,0.0
+nMovements,bodyPartsCombination,0.0
+musicBPM,movementsTransitionsDuration,0.0
+musicBPM,timeDuration,0.0
+musicBPM,bodyPartsCombination,0.0
+movementsTransitionsDuration,timeDuration,0.0
+movementsTransitionsDuration,bodyPartsCombination,0.0
+timeDuration,bodyPartsCombination,0.0

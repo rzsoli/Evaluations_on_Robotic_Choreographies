@@ -1,0 +1,46 @@
+# Global RNG
+random_seed: 42
+
+# Phase 1: Background sampling
+background:
+  sample_size:    500     # desired background rows
+  min_size:       100     # fallback if train set smaller
+  stratify:       true    # stratify by y for classification
+
+# Phase 2: PDP & ICE
+pdp_ice:
+  top_n_features: 5
+  ice_samples:    50
+  grid_points:    50
+
+# Phase 2: Dependence & interaction
+dependence:
+  top_n_features: 5
+interaction:
+  top_n_features:   5
+  subsample_size:   1000  # for numeric interaction summary
+
+# Phase 3: Bootstrap stability & subgroups
+stability:
+  bootstrap_samples:   35
+  random_seed_offset:  0
+  threshold:           0.7   # if you ever want to filter by raw bootstrap ρ
+subgroup_analysis:
+  min_group_size: 30
+  categorical_features: [
+    "musicGenre_electronic",
+    "musicGenre_folk",
+    "musicGenre_indie",
+    "musicGenre_latin",
+    "musicGenre_pop",
+    "musicGenre_rap",
+    "musicGenre_rock"
+  ]
+
+# Phase 4: Prototypes & reporting
+prototypes:
+  n_high:         1
+  n_low:          1
+  tie_breaker:    max_abs_shap
+report:
+  stability_rho_threshold: 0.8

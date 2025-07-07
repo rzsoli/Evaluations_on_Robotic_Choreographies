@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/classification/saved_overall_best_models/OVERALL_BEST_CatBoost_GridCV_PublicInvolvement.joblib",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/PublicInvolvement/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/classification/classification_models_data/EvaluationChoreographyPublicInvolvement/X_holdout.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/PublicInvolvement/feature_names_PublicInvolvement.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/PublicInvolvement/raw_PublicInvolvement.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/PublicInvolvement/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/PublicInvolvement/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

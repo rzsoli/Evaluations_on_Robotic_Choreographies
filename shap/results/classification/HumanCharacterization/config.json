@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/classification/saved_overall_best_models/OVERALL_BEST_XGBoost_GridCV_HumanCharacterization.joblib",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/HumanCharacterization/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/classification/classification_models_data/EvaluationChoreographyHumanCharacterization/X_holdout.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/HumanCharacterization/feature_names_HumanCharacterization.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/HumanCharacterization/raw_HumanCharacterization.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/HumanCharacterization/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/HumanCharacterization/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

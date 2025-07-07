@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/classification/saved_overall_best_models/OVERALL_BEST_XGBoost_GridCV_StoryTelling.joblib",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/StoryTelling/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/classification/classification_models_data/EvaluationChoreographyStoryTelling/X_holdout.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/StoryTelling/feature_names_StoryTelling.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/StoryTelling/raw_StoryTelling.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/StoryTelling/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/StoryTelling/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

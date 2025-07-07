@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/regression/Tuned Models/XGBoost/xgb_model_publicinvolvement.json",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/PublicInvolvement/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/data/regression/Data Splits/PublicInvolvement/X_test_publicinvolvement.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/PublicInvolvement/feature_names_PublicInvolvement.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/PublicInvolvement/raw_PublicInvolvement.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/PublicInvolvement/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/regression/result/PublicInvolvement/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}

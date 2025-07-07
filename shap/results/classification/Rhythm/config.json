@@ -1,0 +1,14 @@
+{
+  "model_path": "/content/Evaluations_on_Robotic_Choreographies/classification/saved_overall_best_models/OVERALL_BEST_XGBoost_GridCV_Rhythm.joblib",
+  "background_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/Rhythm/background.csv",
+  "eval_data_path": "/content/Evaluations_on_Robotic_Choreographies/classification/classification_models_data/EvaluationChoreographyRhythm/X_holdout.csv",
+  "feature_names_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/Rhythm/feature_names_Rhythm.txt",
+  "raw_shap_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/Rhythm/raw_Rhythm.npy",
+  "baseline_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/Rhythm/baseline.txt",
+  "interaction_path": "/content/Evaluations_on_Robotic_Choreographies/shap/classification/Rhythm/interaction.npy",
+  "explainer_type": "TreeExplainer",
+  "explainer_params": {
+    "feature_perturbation": "interventional",
+    "nsamples": null
+  }
+}
