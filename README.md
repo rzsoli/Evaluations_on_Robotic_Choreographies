@@ -38,7 +38,7 @@ All grid-search results, best estimators, and background datasets related to eac
 
 ### Sub-folders
 
-- **`regression > Data Splits/`**  
+- **`regression/ Data Splits/`**  
 Pipelines, hyperparameter grids, and saved model objects for each target.
 
 ---
