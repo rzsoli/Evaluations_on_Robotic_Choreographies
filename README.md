@@ -25,8 +25,14 @@ This repository contains all code, data and results for our three‐part study o
 ---
 
 ## 📂 Regression
+**Folder:** `regression/`
 
-> *(Folder structure present, content to be filled.)*
+### Sub-folders
+
+- **`Best Model per Target/`**  
+The final chosen models (XGBoost & CatBoost serialized via JSON and CBM, respectively) for deployment.
+- **`Tuned Models/`**  
+All grid-search results, best estimators, and background datasets related to each model before the final selection.
 
 ---
 
