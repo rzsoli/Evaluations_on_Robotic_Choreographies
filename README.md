@@ -34,6 +34,13 @@ The final chosen models (XGBoost & CatBoost serialized via JSON and CBM, respect
 - **`Tuned Models/`**  
 All grid-search results, best estimators, and background datasets related to each model before the final selection.
 
+**Folder:** `data/`
+
+### Sub-folders
+
+- **`regression > Data Splits/`**  
+Pipelines, hyperparameter grids, and saved model objects for each target.
+
 ---
 
 ## 📂 SHAP
