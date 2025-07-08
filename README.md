@@ -1,16 +1,34 @@
 # Interpretable ML for Robotic Choreography Evaluation
 
-This repository contains all code, data and results for our three‐part study on predicting and explaining audience evaluations of humanoid‐robot choreographies:
+This repository contains the complete code, data, and results for a study on predicting and explaining audience evaluations of humanoid-robot choreographies. The core objective is to build an automated system for evaluating robot performances and, more importantly, to understand the key factors that drive audience perception.
 
-1. **Classification** – Bin-arize audience scores (1–3 → 0, 4–5 → 1) and train four model families (Logistic Regression, Random Forest, XGBoost, CatBoost) to predict “high vs. low” ratings across seven targets.  
-2. **Regression** – Predict the original 1–5 Likert scores with linear (Ridge) and tree-based regressors.  
-3. **SHAP** – Interpret the final models using a four-phase pipeline of SHAP value computation, dependence and interaction plots, stability analysis, subgroup analyses and decision plots.
+The final, comprehensive report detailing our methodology and findings is available in **[`report.pdf`](./report.pdf)**.
+
+This project is structured as a three-part machine learning pipeline:
+
+1.  **Classification** – Predict whether a choreography receives a "high" or "low" rating. Audience scores (1-5) are binarized (1–3 → 0, 4–5 → 1), and four model families (Logistic Regression, Random Forest, XGBoost, CatBoost) are trained on seven distinct evaluation targets.
+2.  **Regression** – Predict the original 1–5 Likert scores using linear (Ridge) and tree-based regressors to capture more nuanced evaluations.
+3.  **SHAP (SHapley Additive exPlanations)** – Interpret the final models using a comprehensive SHAP analysis to identify which choreography features most influence audience scores.
 
 ---
+## 📂 EDA
+-   **[`eda_and_preprocessing.ipynb`](./eda_and_preprocessing.ipynb)**: A Jupyter notebook that:
+    -   Loads the raw data.
+    -   Cleans and preprocesses features (e.g., standardizing text, handling duplicates).
+    -   Performs one-hot encoding for the `musicGenre` column.
+    -   Conducts EDA with visualizations to explore the data.
 
 ## 📂 Classification
 
 **Folder:** `classification/`
+
+-   **[`tabular_quickstart.ipynb`](./classification/tabular_quickstart.ipynb)**: An initial exploration using AutoML to establish a strong performance baseline and gain insights before manual model development.
+
+-   **[`classifier.ipynb`](./classification/classifier.ipynb)**: The primary notebook for the classification task. It implements the end-to-end pipeline:
+    1.  Data loading and splitting for each of the seven targets.
+    2.  Hyperparameter tuning using GridSearchCV for four model families: Logistic Regression, Random Forest, XGBoost, and CatBoost.
+    3.  Model evaluation using metrics like Accuracy, F1-Score, and AUC.
+    4.  Saving all tuned models and the final, best-performing model for each target
 
 ### Sub-folders
 
