@@ -45,6 +45,12 @@ This project is structured as a three-part machine learning pipeline:
 ## 📂 Regression
 **Folder:** `regression/`
 
+-   **[`Regressor.ipynb`](./regression/Regressor.ipynb)**: The primary notebook for the regression task. It implements the end-to-end pipeline:
+    1.  Data loading and splitting for each of the seven targets.
+    2.  Hyperparameter tuning using GridSearchCV for four model families: Ridge Pipelines, XGBoost, CatBoost, and MLP
+    3.  Model evaluation using metrics like MAE, RMSE, and R² score.
+    4.  Saving all tuned models and the final, best-performing model for each target
+
 ### Sub-folders
 
 - **`Best Model per Target/`**  
