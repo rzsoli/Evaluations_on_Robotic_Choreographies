@@ -105,13 +105,21 @@ This ensures our explanations are tailored to different design contexts.
 
 ## Phase 4: Synthesis & Reporting
 
-This final phase turns insights into actionable deliverables:
-
+This final phase synthesizes the entire analysis into human-interpretable explanations for stakeholders; turning insights into actionable stories.
+It acts as the delivery layer of our pipeline.
+ 
 1. **Prototypical Decision Plots** (`decision_<target>.png`)  
 
-2. **Master Summary Table** (`final_summary.csv`)  
+These are detailed waterfall plots for individual predictions.
+They visualize the baseline output and how each feature contributes
+ to the final score for a selected choreography.
+For each model and target, we include two representative samples: one 
+with predominantly positive SHAP values, and one with negative values.
+
    ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/7.png)
 
+
+2. **Master Summary Table** (`final_summary.csv`)  
 
 3. **Report Snippets** (`report_snippets.md`)  
    Auto‑generated plain‑English explanations drawn from the summary table.
