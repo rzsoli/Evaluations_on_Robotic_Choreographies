@@ -27,7 +27,7 @@ This phase produces three outputs:
 
 ### SHAP Values Scatter Plot
 
-[INSERT IMAGE: Scatter plot of SHAP values on the x‑axis (–1 to +1) vs. feature values, with a color bar indicating feature magnitude]
+![Scatter plot of SHAP values on the x‑axis (–1 to +1) vs. feature values, with a color bar indicating feature magnitude](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/1.png)
 
 On the x‑axis, we have the SHAP values: +1 indicates maximum positive effect on the target, –1 indicates maximum negative effect, and 0 means neutral influence.
 
@@ -45,9 +45,7 @@ Phase 2 is about answering **how** and **when** features matter. We create two 
 
 ### SHAP Dependence Plots
 
-SHAP dependence plots are generated using the interaction and raw SHAP values from Phase 1. These plots reveal the main effect of a feature and how it is influenced by another feature.
-
-[INSERT IMAGE: SHAP dependence plot for nMovements vs. SHAP value, colored by timeDuration]
+![SHAP dependence plot for nMovements vs. SHAP value, colored by timeDuration](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/2.png)
 
 In this example, the y‑axis shows the SHAP value for **nMovements**, indicating its effect on the target score; the x‑axis shows raw nMovements values; and the color gradient represents **timeDuration**. You can see:
 
@@ -57,15 +55,15 @@ In this example, the y‑axis shows the SHAP value for **nMovements**, indicatin
 
 ### PDP/ICE Plots
 
-PDP (Partial Dependence) and ICE (Individual Conditional Expectation) plots show the average and individual effects of a single feature on predictions. For each choreography sample, we hold all other features constant and vary **timeDuration**:
+![PDP/ICE plot showing predicted score vs. timeDuration for individual samples](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/3.png)
 
-[INSERT IMAGE: PDP/ICE plot showing predicted score vs. timeDuration for individual samples]
+PDP (Partial Dependence) and ICE (Individual Conditional Expectation) plots show the average and individual effects of a single feature on predictions. For each choreography sample, we hold all other features constant and vary **timeDuration**:
 
 As shown, setting timeDuration between **105** and **140** tends to yield the highest predicted score.
 
 ### Example: Music BPM & Movements Interaction
 
-[INSERT IMAGE: SHAP dependence plot showing interaction between music BPM and number of movements]
+![SHAP dependence plot showing interaction between music BPM and number of movements](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/4.png)
 
 This plot shows the interaction between **music BPM** and **number of movements**:
 
@@ -105,7 +103,7 @@ This ensures our explanations are tailored to different design contexts.
 This final phase turns insights into actionable deliverables:
 
 1. **Prototypical Decision Plots** (`decision_<target>.png`)  
-   [INSERT IMAGE: Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample]
+   ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/5.png)
 
 2. **Master Summary Table** (`final_summary.csv`)  
    [INSERT TABLE: Aggregated feature importance metrics across all targets]
@@ -124,4 +122,4 @@ All outputs are included in the project repository for easy access and review.
 
 - **Non‑linear & Context‑dependent Effects**: For example, too many movements combined with a long duration can lead to worse outcomes.
 
-- **Robustness**: Our results do not depend on sampling randomness, as validated by the bootstrap analysis.
+- **Robustness**: Our results do not depend on sampling randomness, as validated by the bootstrap analysis.  
