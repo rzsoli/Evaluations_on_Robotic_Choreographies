@@ -130,15 +130,40 @@ Your explanation must be clear, insightful, and accessible to a dual audience:
 1.  **Non-technical users** (e.g., choreographers, designers).
 2.  **Technical users** (e.g., HRI engineers, data scientists).
 
-You will be given the specific feature values for a choreography and the corresponding SHAP values, which quantify how much each feature contributed to the model's final prediction. A positive SHAP value pushed the prediction higher, while a negative value pushed it lower.
+You will be given the specific feature values for a choreography and the corresponding SHAP values, which quantify how much each feature contributed to the model's final prediction. A positive SHAP value pushed the prediction higher, while a negative value pushed it lower. you also have the prediction of the model for the target values and the model typep(classifier/regressor). the classifier prediction is wether 1 or 0 showing high or low for the target values. the regressor prediction is a score between 1 (low) to 5 (high) showing the score for the target values.
 
 **General Context from the Full Report:**
-Remember that across most models, the three most influential features are consistently **`nMovements`** (number of movements), **`timeDuration`**, and **`musicBPM`** (music tempo). Your analysis should pay special attention to these, but also highlight other interesting contributors.
+The SHAP analysis of the final models (primarily XGBoost and CatBoost) revealed a consistent and stable set of key drivers for audience scores. Across almost all evaluation targets, the three most influential features are:
+1.  **`nMovements`** (the total number of different movements)
+2.  **`timeDuration`** (the choreography's length in seconds)
+3.  **`musicBPM`** (the tempo of the music)
+**List of all features:**
+- timeDuration: Duration of the choreography in seconds.
+- nMovements: The total number of different movements in the choreography.
+- movementsDifficulty: The degree of movement difficulty, on an ordinal scale from 1 (low) to 3 (high).
+- robotSpeech: A binary indicator (0/1) of whether robot speech is included in the performance.
+- acrobaticMovements: The level of acrobatic movements, on an ordinal scale from 1 (low) to 3 (high).
+- movementsRepetition: The level of movement repetitions, on an ordinal scale from 1 (low) to 3 (high).
+- musicGenre: The genre of the accompanying music (e.g., folk, electronic, rock, pop, etc.).
+- movementsTransitionsDuration: The level of duration for transitions between movements, on an ordinal scale from 1 to 3.
+- humanMovements: The level of human-like movement presence, on an ordinal scale from 1 to 3.
+- balance: The level of balance movements incorporated, on an ordinal scale from 1 to 3.
+- speed: The degree of movement speed, on an ordinal scale from 1 (slow) to 3 (fast).
+- bodyPartsCombination: The level of combinations involving different body parts, on an ordinal scale from 1 to 3.
+- musicBPM: The beats per minute (BPM) of the accompanying music.
+- sameStartEndPositionPlace: A binary indicator (0/1) of whether the start and end positions are identical.
+- headMovement: The level of head movement combinations, on an ordinal scale from 1 to 3.
+- armsMovement: The level of arm movement combinations, on an ordinal scale from 1 to 3.
+- handsMovement: The level of hand movement presence, on an ordinal scale from 1 to 3.
+- legsMovement: The level of leg movement presence, on an ordinal scale from 1 to 3.
+- feetMovement: The level of feet movement presence, on an ordinal scale from 1 to 3.
+
+Crucially, the analysis also confirmed strong **interaction effects**. The impact of one feature often depends heavily on the value of another. For example, the SHAP dependence plots showed that a high number of movements (`nMovements`) might be penalized in a short performance but rewarded in a longer one. Similarly, the effect of `movementsDifficulty` can flip from positive to negative depending on the tempo or the involvement of other body parts. Therefore, a high value for a feature is not universally "good" or "bad"; its effect is highly contextual. Your analysis should pay special attention to these three core features and their potential interactions, while also highlighting other interesting contributors.
 
 **Required Output Structure:**
 Please structure your analysis using exactly these five sections:
 1.  **Key Insights**: A one-sentence summary of the most important factors driving this specific prediction.
-2.  **Feature Analysis**: Explain the impact of the top 3-5 most influential features (both positive and negative).
+2.  **Feature Analysis**: Explain the impact of the top 3-5 most influential features (most absolute SHAP values).
 3.  **Model Behavior**: Generalize from this single instance to describe what the model seems to have learned about this evaluation metric.
 4.  **Practical Implications**: Provide actionable advice for a choreographer or designer looking to improve a robot's score for this target.
 5.  **Surprising Findings**: Point out any unexpected or subtle feature contributions that are not immediately obvious.
