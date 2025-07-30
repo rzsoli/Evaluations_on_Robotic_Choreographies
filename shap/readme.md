@@ -87,6 +87,9 @@ We assess whether feature importance rankings remain consistent across different
 
 This confirms that top features—like **nMovements**—are not statistical flukes but exhibit consistent importance.
 
+   ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/5.png)
+
+
 ### Subgroup SHAP Analysis
 
 We examine whether feature importance varies across subgroups (e.g., folk vs. electronic music):
@@ -96,6 +99,8 @@ We examine whether feature importance varies across subgroups (e.g., folk vs. el
 
 This ensures our explanations are tailored to different design contexts.
 
+   ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/6.png)
+
 ---
 
 ## Phase 4: Synthesis & Reporting
@@ -103,10 +108,10 @@ This ensures our explanations are tailored to different design contexts.
 This final phase turns insights into actionable deliverables:
 
 1. **Prototypical Decision Plots** (`decision_<target>.png`)  
-   ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/5.png)
 
 2. **Master Summary Table** (`final_summary.csv`)  
-   [INSERT TABLE: Aggregated feature importance metrics across all targets]
+   ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/7.png)
+
 
 3. **Report Snippets** (`report_snippets.md`)  
    Auto‑generated plain‑English explanations drawn from the summary table.
@@ -118,7 +123,8 @@ All outputs are included in the project repository for easy access and review.
 ## Conclusion
 
 - **Key Features**: We found that **nMovements**, **musicBPM**, and **timeDuration** are the most important features. Even when considering other features, their behavior often depends on interactions with these three.  
-  [INSERT TABLE: Top features for each target variable]
+   ![Waterfall plot showing baseline vs. feature contributions for one positive and one negative sample](https://raw.githubusercontent.com/rzsoli/Evaluations_on_Robotic_Choreographies/main/shap/readme/8.png)
+
 
 - **Non‑linear & Context‑dependent Effects**: For example, too many movements combined with a long duration can lead to worse outcomes.
 
